@@ -13,7 +13,7 @@
   <!-- cabeçalhos -->
   <header>
     <h1> Quiz interativo para programadores.</h1>
-    <p>Teste seus conhecimentos e veja qual sua pontuação!</p>
+    <p class="p-header">Teste seus conhecimentos e veja qual sua pontuação!</p>
     
    </header>
   <!-- corpo do html -->
@@ -30,7 +30,10 @@
   <!-- Pergunta 1: Multipla escolha-->
       <section>
    <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
-   <form >
+   <!-- form abarca tudo que ta abaixo dela
+    input é o botao e 
+    label o que esta escrito ao lado -->
+   <form class="inputP1P5">
     <input 
       type="radio"
        value="python" 
@@ -61,7 +64,7 @@
    <section>
     <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o ____?</h2>
     <!--  representa uma seção de documento que contém controles interativos para enviar informações. -->
-    <form >
+    <form>
     <input type="text" name="pergunta2" id="p2" placeholder="Digite sua resposta...">
   </form>
    </section>
@@ -69,7 +72,7 @@
    <!-- Pergunta 3: senha -->
   <section>
     <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
-    <form >
+    <form>
       <input type="passowrd" name="pergunta3" id="p3" placeholder="Digite uma senha...">
     </form>
   </section>
@@ -85,7 +88,7 @@
    <!--Pergunta 5: seleção múltipla-->
    <section>
   <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação</h2>
-  <form>
+    <form  class="inputP1P5">
     <input type="checkbox" id="p5a" name="pergunta5" value="Javascript">
     <label for="p5a">Javascript</label>
     <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
@@ -119,19 +122,26 @@
 </section>
 
 <!--Pergunta 8: imagem-->
-<section>
+<section >
   <h2>Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
-    <figure>
-      <img src="./Ativo/perg8.jpeg" alt="Logo tipo Java">
-      <figcaption>Figura1: Imagem via computador.</figcaption>
-    </figure>
-      <input type="text" name="pergunta8" id="p8"  placeholder="Digite sua reaposta...">
+    <div class="figure">
+      <figure>
+        <img src="./Ativo/perg8.jpeg" alt="Logo tipo Java">
+        <figcaption>Figura1: Imagem via computador.</figcaption>
+      </figure>
       
+      <!-- sem o flex model seria aqui o palaceholder -->
+        <!-- <input type="text" name="pergunta8" id="p8"  placeholder="Digite sua reaposta..."> -->
 
-  <figure>
-  <img src="https://avatars.githubusercontent.com/u/208867909?v=4" alt="foto carregada via web - Everton">
-  <figcaption>Figura2: Foto anexada via web.</figcaption>
-</figure>
+        <div>
+          <figure>
+          <img class="img2" src="https://avatars.githubusercontent.com/u/208867909?v=4" alt="foto carregada via web - Everton">
+          <figcaption>Figura2: Foto anexada via web.</figcaption>
+        </div>
+        
+      </figure>
+    </div>
+    <input type="text" name="pergunta8" id="p8"  placeholder="Digite sua reaposta...">
 </section>
 
 <!--Tabela de Pontuação-->
@@ -193,27 +203,28 @@
 <!--Formulário de Feedback-->
 <section>
     <h2>Nos dê o seu feedback</h2>
-    <form >
-      <fieldset>
-        <legend>Informações de contato</legend>
-        <label for="name">Nome:</label>
-        <input type="text" id="name"  name="name"><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email"  name="email"><br>
-        <label for="comentarios">Comentários</label>
-        <textarea name="comentarios" id="comentarios"
-        rows="4" cols="50"
-        placeholder="Digite aqui seus comentários aqui...">
-            </textarea>
-            <button onclick="alert('Feedback enviado')">Envie seu feedback</button>
-      </fieldset>
-    </form>
+
+      <form>
+        <fieldset>
+          <legend>Informações de contato</legend>
+          <label for="name">Nome:</label>
+          <input type="text" id="name"  name="name"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email"  name="email"><br>
+          <label for="comentarios">Comentários:</label><br>
+          <textarea name="comentarios" id="comentarios"
+          rows="4" cols="50"
+          placeholder="Digite aqui seus comentários aqui...">
+              </textarea><br>
+              <button onclick="alert('Feedback enviado')">Envie seu feedback</button>
+        </fieldset>
+      </form>
     </section>
 </main>
 <!-- rodapés -->
   <footer>
-    <p>&copy;Quiz de programadores. Todos direitos de reservados.</p>
-    <p>Para conhecer mais sobre mim <a href="sobre_mim.html" target="_blank">Clique aqui</a></p>
+    <p class="paragrafoFooter">&copy;Quiz de programadores. Todos direitos de reservados.</p>
+    <p class="paragrafoFooter">Para conhecer mais sobre mim <a href="sobre_mim.html" target="_blank">Clique aqui</a></p>
   </footer>
 </body>
 </html> 
