@@ -8,6 +8,9 @@ Espaçamentos - Major Third - 1.250 - Em PX
 2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16 - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
 
 */
+/* importando fontes do goole fontes @import */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -22,5 +25,185 @@ body {
   font-family: "montserrat", sans-serif;
    font-size: 1.6rem;
   line-height: 1.6; 
+} 
+
+body {
+  background-color: aliceblue;
+  color: #798252;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400 ;
 }
 
+header {
+  padding: 2rem;
+  background-color: rgb(205, 195, 183);
+  text-align: center;
+  border: solid 0.6rem rgb(171, 124, 66);
+  border-radius: 2.5rem;
+
+  & h1{
+    color:rgb(171, 124, 66) ;
+    line-height: normal;
+    font-size: 3.32rem;
+      }
+
+      & p{
+        font-weight: 500 ;
+        text-decoration: underline;
+      }
+}
+
+main {
+  /* bordas aqui so para identificar as margens e paddings - ao final pode apagar */
+  border: solid 0.6rem rgb(171, 124, 66);
+  border-radius: 2.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+
+  & h2{
+    color: rgb(194, 148, 92); 
+    font-size: 2.3rem;
+  }
+}
+
+.inputP1P5 {
+   accent-color:rgb(194, 148, 92) ;  
+   
+    }
+/*  ou desta forma abaixo */
+    input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+      width: 100%;
+      padding: 0.3rem;
+      border: 0.2rem solid  #798252;
+      border-radius: 0.5rem;
+      background-color: transparent;
+    }
+/* todos os inputs receberao o atributo color */
+    input::placeholder {
+      color:#798252;
+    }
+
+    input{
+      color:#798252;
+    }
+
+    select{
+      padding: 2px 6px;
+      font-size: 1.69rem;
+      cursor: pointer;
+      background-color:rgb(216, 174, 122);
+      color: #798252;
+     border-radius:  0.5rem;
+     border: none;
+    }
+
+    img {
+      width: 7rem;
+      border-radius: 0.5rem;
+    }
+
+    .figure {
+      display: flex;
+      flex-direction: row;
+     justify-content: center;
+      gap: 5rem;
+
+        & .img2 {
+          width: 9rem;
+         }
+      }
+
+      table{
+        width: 100%;
+        border-collapse:collapse;
+       border: solid 0.5rem  rgb(216, 174, 122);
+       
+
+        & th{
+          background-color: rgb(216, 174, 122) ;
+          padding: 0.5rem;
+        }
+
+        & td{
+          text-align: center;
+        }
+        
+        & tfoot td{
+          background-color: rgb(216, 174, 122);
+        }
+      }
+
+      details {
+        background-color: rgb(216, 174, 122);
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+          & summary{
+            cursor: pointer; 
+          }
+
+          & ol{
+            margin-left: 1.5rem;
+          }
+
+          & li{
+            padding: 0.2rem;
+          }
+      }
+
+      fieldset {
+        background-color:transparent;
+        border: 0.3rem solid rgb(216, 174, 122);
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+          & legend{
+            color:rgb(216, 174, 122);
+            padding: 0 0.5rem;
+          }
+
+          & textarea{
+            background-color: transparent;
+            outline: none;
+            border-radius: 0.5rem;
+            border: 0.2rem solid #798252;
+          }
+
+          & button {
+           background-color: transparent;
+           border: 0.2rem solid #798252;
+            padding: 0.3rem;
+            color: #798252;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 500; 
+          }
+        }
+
+        footer {
+          padding: 2rem;
+          background-color: rgb(205, 195, 183);
+          text-align: center;
+          border: solid 0.6rem rgb(171, 124, 66);
+          border-radius: 2.5rem;
+
+          & .paragrafoFooter{         
+            color: aliceblue;
+          }
+
+          & a{
+            text-decoration: none;
+            color: #798252;
+          }
+        }
+
+        
+       
